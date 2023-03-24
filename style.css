@@ -1,7 +1,16 @@
+body{
+    background-color: rgb(122, 130, 138);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
 header{
     background-color: black;
     color: white;
-    height: 90px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+
 
 }
 
@@ -10,8 +19,71 @@ header{
     text-decoration: none;
     border: 1px solid white;
     display: inline-block;
+    width: 11%;
+    font-size: 1.2em;
+    text-align: center;
+    padding: .1em;
+    margin: .9em;
+    border-radius: 20px 0 20px 0;
+
 
 }
+/*-------------------------------------------------------------------------------*/
+
+.title{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.descricao{
+    width: 60%;
+    display: inline-block;
+}
+
+#imagem-capa{
+    width: 30%;
+    border-radius: 100%;
+    display: inline
+}
+
+.habilidade-capa h2{
+    list-style: none;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(100, 107, 107, 0.493);
+    text-align: center;
+    color: bisque;
+
+
+}
+.habilidade-capa ul{
+    width: 89%;
+
+    text-align: center;
+    color: bisque;
+}
+
+.contato-capa {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(100, 107, 107, 0.493);
+    color: bisque;
+    text-align: center;
+
+}
+
+.button-icon{
+    text-decoration: none;
+    color: white;
+}
+
+.icone-contato-capa{
+    width: 20px;
+
+}
+
 
 
 
