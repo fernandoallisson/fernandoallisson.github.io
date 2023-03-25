@@ -1,17 +1,136 @@
-header{
-    background-color: black;
+body{
+    background-color: rgb(17, 12, 12);
+    font-family: 'Montserrat', sans-serif;
     color: white;
-    height: 90px;
-
+    font-size: 16px;
+    
 }
 
-.buttonHead{
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
+#header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 2px white;
+    background-color: rgb(34, 29, 29);
     display: inline-block;
+    top: 0px;
+    display: flex;
+    align-items: center;
+ 
+}
 
+#spaceIcon{
+    width: 40%;
+    height: 100%;
+}
+
+
+#iconHeader{ /* Ícone do cabeçalho*/
+    width: 20%;
+    padding: 5px 0 5px 80px;
+
+
+}
+
+.buttonsContent {
+
+    width: 40%;
+    height: 100%;
+    display: flex;
+
+
+}
+
+.buttonHome{ /* Botões de navegação */ 
+    text-decoration: none;
+    width: 120px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px 2px 5px 2px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    font-size: 12px;
+    transition: all 0.5s;
+    color: rgb(255, 255, 255);
+
+}
+
+.buttonHome:hover{
+    font-size: 14px;
+    text-decoration: underline;
+    
+}
+
+#homeConttent{
+    margin-top: 100px;
+    display: flex;
+}
+
+#portfFernando{
+    width: 50%;
+}
+
+#nomePort{
+    font-size: 6em;
+    margin: 50px 0 100px 50px;
+
+
+}
+
+#photoHome{
+    opacity: 80%;
+    transition: all 1s;
+}
+
+#photoHome:hover{
+    opacity: 100%;
+}
+
+
+#buttonPort{
+    text-align: right;
+    margin-right: 50px;
+
+}
+
+.buttonPort{
+    width: 300px;
+    border: solid 1px rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 50px;
+    border-radius: 2px 8px 2px 8px;
+    padding: 10px;
+    background-color: azure;
+    color: blue;
+    box-shadow: 2px 2px 4px rgba(43, 5, 255, 0.479);
+    transition: all 1s;
+}
+
+.buttonPort:hover{
+    text-decoration: underline;
 }
 
 
 
+#footer {
+    border-bottom: solid 1px white;
+    background-color: rgb(34, 29, 29);
+    height: 60px;
+    color: black;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 10%;
+}
+
+h5{
+
+    align-items: center;
+    padding: 20px 0 0 0px;
+    bottom: 0;
+}
