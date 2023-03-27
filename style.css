@@ -21,13 +21,10 @@ body{
     align-items: center;
    
 }
-/* --------------------------------------Navegação (header)------------------------------------*/
 
 #spaceIcon{
     width: 40%;
     height: 100%;
-    
-
 }
 
 #iconHeader{
@@ -36,37 +33,12 @@ body{
 }
 
 .buttonsContent {
-
     width: 60%;
     height: 100%;
     display: flex;
     right: 0;
     justify-content: right;
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .buttonHome{ /* Botões de navegação */ 
     text-decoration: none;
@@ -82,29 +54,30 @@ body{
 
 }
 
+.buttonHome:hover{
+    font-size: 14px;
+    text-decoration: underline;
+    transition: all 0.5ms;
+}
+
 .buttonHome:active{
     font-size: 14px;
     transition: 1s;
     text-decoration: underline;
     background-color: #257c85;
     color: white;
-    transition: all 0.1ms;
-    
+    transition: all 1.5ms;
 }
 
-
-.buttonHome:hover{
-    font-size: 14px;
-    text-decoration: underline;
-    transition: all 0.5s;
-    
-}
-
+/* --------------------------------------Main------------------------------------*/
 #homeConttent{
     margin-top: 100px;
     display: flex;
+    padding: 10px;
 }
 
+
+/* --------------------------------------Seção título e botão------------------------------------*/
 #portfFernando{
     width: 50%;
 }
@@ -114,39 +87,39 @@ body{
     margin: 50px 0 100px 50px;
 }
 
-#photoHome{
-    opacity: 80%;
-    transition: all 1s;
-}
-
-#photoHome:hover{
-    opacity: 100%;
-}
-
-
 #buttonPort{
     text-align: right;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .buttonPort{
     width: 300px;
     border: solid 1px rgb(255, 255, 255);
     text-decoration: none;
-    margin-right: 50px;
     border-radius: 2px 8px 2px 8px;
     padding: 10px;
     background-color: none;
     color: #257c85;
     box-shadow: 2px 2px 4px #257c85;
-    transition: all 1s;
 }
 
 .buttonPort:hover{
     text-decoration: underline;
+    transition: all 1s;
 }
 
+.buttonPort:active{
+    background-color: #257c85;
+    transition: all 1.3ms;
+    color: white;
+}
+/* --------------------------------------Seção Foto------------------------------------*/
 
+#photoHome{
+    width: 50%;
+}
+
+/* --------------------------------------Rodapé------------------------------------*/
 
 #footer {
     border-bottom: solid 1px white;
@@ -163,8 +136,32 @@ body{
     margin-top: 10%;
 }
 
-h5{
+#footer h5{
     align-items: center;
     padding: 20px 0 0 0px;
     bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
