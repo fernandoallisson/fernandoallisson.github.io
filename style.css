@@ -123,9 +123,9 @@ body{
 
 #footer {
     border-bottom: solid 1px white;
-    background-color: rgb(34, 29, 29);
+    background-color:  #257b852c;
     height: 60px;
-    color: black;
+    color: white;
     text-align: center;
     align-items: center;
     width: 100%;
