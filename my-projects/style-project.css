@@ -106,10 +106,8 @@ body{
     margin-top: 10px;
     text-align: center;
 }
-
-#contentProjects ul li {
-    display: inline-block;
-    margin: 2%;
+#Esseaqui{
+    align-items: flex-start;
 }
 
 .imgContent {
@@ -138,13 +136,16 @@ body{
 
 .description{
     text-align: center;
-    margin: 15px;
-    width: 180px;
+    margin: 8px;
+    width: 195px;
     font-size: 12px;
 }
 
 .boxForProject{
     width: 210px;
+    display: inline-block;
+    margin: 2%;
+    
 }
 
 /* --------------------------------------Rodapé------------------------------------*/
