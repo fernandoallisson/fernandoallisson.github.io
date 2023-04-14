@@ -74,11 +74,3 @@ const hydrate = (string) => {
   } return `${searchNumber(string)} copos de água`
 };
 
-/* eslint no-undef: 0 */
-
-// Não modifique essas linhas
-module.exports = {
-  generatePhoneNumber: typeof generatePhoneNumber === 'function' ? generatePhoneNumber : (() => {}),
-  triangleCheck: typeof triangleCheck === 'function' ? triangleCheck : (() => {}),
-  hydrate: typeof hydrate === 'function' ? hydrate : (() => {}),
-};

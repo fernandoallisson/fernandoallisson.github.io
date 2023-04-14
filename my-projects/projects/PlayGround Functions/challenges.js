@@ -1,24 +1,48 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (parametro1, parametro2) => {
-  const trueExpresion = (parametro1 === true && parametro2 === true) ? true : false;
-  return trueExpresion;
+const compareTrue = (text1, text2) => {
+  return text1 === text2;
 };
+// -------------------[DESAFIO 1]------------------------------
+const compararHTML = () => {
+  const text1 = document.querySelector('#inputText').value;
+  const text2 = document.querySelector('#inputText2').value;
+  const addTxt = document.querySelector('.result');
+
+  if(text1 === '' || text2 === '') {
+    alert('É preciso adicionar uma palavra no campo de texto');
+  } else if (compareTrue(text1, text2)) {
+    addTxt.innerHTML = `A string <strong><em>${text1}</em></strong> é exatamente igual à string <strong><em>${text2}</em></strong>.`;
+  } else {
+    addTxt.innerHTML = `A string <strong><em>${text1}</em></strong> é diferente da string <strong><em>${text2}</em></strong>.`;
+  }
+};
+
+
+
+// ------------------------------------------------------------
+
 
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (string) => {
   return string.split(' '); 
 };
+// -------------------[DESAFIO 2]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 3 - Crie a função concatName
 const concatName = (array) => {
   return `${array[array.length-1]}, ${array[0]}`;
 };
+// -------------------[DESAFIO 3]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 4 - Crie a função footballPoints
 const footballPoints = (wins, ties) => {
   return (wins * 3) + ties;
 };
+// -------------------[DESAFIO 4]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 5 - Crie a função highestCount
 const MayorNumber = (array) => {
   let MayorNumberArray = array[0];
@@ -40,7 +64,9 @@ const highestCount = (array) => {
   }
   return counterNumber; 
 };
+// -------------------[DESAFIO 5]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 const calcTriangleArea = (base, height) => {
   return (base * height) / 2;
@@ -57,14 +83,18 @@ const calcAllAreas = (base, height, form) => {
     return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
   } return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`;
 };
+// -------------------[DESAFIO 6]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 7 - Crie a função catAndMouse
 const catAndMouse = (mouse, cat1, cat2) => {
   let verificacao1 = ((Math.abs(cat1 - mouse)) < (Math.abs(cat2 - mouse))) ? 'cat1' : 'cat2';
   let verificação = ((Math.abs(cat1 - mouse)) === (Math.abs(cat2 - mouse))) ? `os gatos trombam e o rato foge` : verificacao1;
   return verificação;
 };
+// -------------------[DESAFIO 7]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 8 - Crie a função fizzBuzz
 const fizzBuzz = (array) => {
   let newArray = [];
@@ -81,7 +111,9 @@ const fizzBuzz = (array) => {
   }
   return newArray;
 };
+// -------------------[DESAFIO 8]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 9 - Crie a função encode e a função decode
 const encode = (string) => {
   let newString = string.split('') // separando letra por letra para verificação
@@ -123,7 +155,9 @@ const decode = (string) => {
   }
   return arrayEncode.join('');
 };
+// -------------------[DESAFIO 9]------------------------------
 
+// ------------------------------------------------------------
 // Desafio 10 - Crie a função techList
 const techList = (array, string) => {
   if (array.length === 0) {
@@ -135,19 +169,6 @@ const techList = (array, string) => {
   }
   return arrayObj;
 };
-// Não modifique essas linhas
-module.exports = {
-  calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
-  calcRectangleArea: typeof calcRectangleArea === 'function' ? calcRectangleArea : (() => {}),
-  calcAllAreas: typeof calcAllAreas === 'function' ? calcAllAreas : (() => {}),
-  catAndMouse: typeof catAndMouse === 'function' ? catAndMouse : (() => {}),
-  compareTrue: typeof compareTrue === 'function' ? compareTrue : (() => {}),
-  concatName: typeof concatName === 'function' ? concatName : (() => {}),
-  decode: typeof decode === 'function' ? decode : (() => {}),
-  encode: typeof encode === 'function' ? encode : (() => {}),
-  fizzBuzz: typeof fizzBuzz === 'function' ? fizzBuzz : (() => {}),
-  footballPoints: typeof footballPoints === 'function' ? footballPoints : (() => {}),
-  highestCount: typeof highestCount === 'function' ? highestCount : (() => {}),
-  splitSentence: typeof splitSentence === 'function' ? splitSentence : (() => {}),
-  techList: typeof techList === 'function' ? techList : (() => {}),
-};
+// -------------------[DESAFIO 10]------------------------------
+
+// ------------------------------------------------------------
