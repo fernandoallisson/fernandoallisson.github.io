@@ -17,31 +17,47 @@ const compararHTML = () => {
   }
 };
 
-
-
 // ------------------------------------------------------------
-
 
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (string) => {
-  return string.split(' '); 
+  return string.split(' ');
 };
+
 // -------------------[DESAFIO 2]------------------------------
+const btnSeg = document.querySelector('#btnSeg');
+btnSeg.addEventListener('click', () => {
+  const textAreaSeg = document.querySelector('#segDes').value;;
+  const resultSeg = document.querySelector('.resultSeg');
+  resultSeg.innerHTML= splitSentence(textAreaSeg);
+})
 
 // ------------------------------------------------------------
 // Desafio 3 - Crie a função concatName
 const concatName = (array) => {
   return `${array[array.length-1]}, ${array[0]}`;
 };
-// -------------------[DESAFIO 3]------------------------------
 
+// -------------------[DESAFIO 3]------------------------------
+const btnTer = document.querySelector('#btnTer');
+btnTer.addEventListener('click', () => {
+  const resulTer = document.querySelector('#resulTer');
+  const textAreaTer = splitSentence(document.querySelector('#textAreaTer').value);
+  resulTer.innerText = concatName(textAreaTer);
+})
 // ------------------------------------------------------------
 // Desafio 4 - Crie a função footballPoints
 const footballPoints = (wins, ties) => {
   return (wins * 3) + ties;
 };
 // -------------------[DESAFIO 4]------------------------------
-
+const btnQua = document.querySelector('#btnQua');
+btnQua.addEventListener('click', () => {
+  const iptWin = Number(document.querySelector('#win').value);
+  const iptTies = Number(document.querySelector('#ties').value);
+  const resulQua = document.querySelector('#resulQua')
+  resulQua.innerText = `A pessoa player fez ${footballPoints(iptWin, iptTies)} pontos`
+})
 // ------------------------------------------------------------
 // Desafio 5 - Crie a função highestCount
 const MayorNumber = (array) => {
@@ -65,7 +81,12 @@ const highestCount = (array) => {
   return counterNumber; 
 };
 // -------------------[DESAFIO 5]------------------------------
-
+  const btnQuin = document.querySelector('#btnQuin');
+  btnQuin.addEventListener('click', () => {
+    const numQuin = document.querySelector('#numQuin').value;
+    const resulQuin = document.querySelector('#resulQuin');
+    resulQuin.innerText = `O maior número do array é: ${MayorNumber(numQuin)} e ele aparece ${highestCount(numQuin)} vezes.`
+  })
 // ------------------------------------------------------------
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 const calcTriangleArea = (base, height) => {
@@ -84,16 +105,34 @@ const calcAllAreas = (base, height, form) => {
   } return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`;
 };
 // -------------------[DESAFIO 6]------------------------------
-
+const btnSex = document.querySelector('#btnSex')
+btnSex.addEventListener('click', () => {
+  const forma = document.querySelector('#forma').value;
+  const bas = Number(document.querySelector('#bas').value);
+  const alt = Number(document.querySelector('#alt').value);
+  const resulSex = document.querySelector('#resulSex');
+  if (forma == 'triângulo'){
+    resulSex.innerText = calcAllAreas(bas, alt, forma)
+  } else {
+    resulSex.innerText = calcAllAreas(bas, alt, forma)
+  }
+})
 // ------------------------------------------------------------
 // Desafio 7 - Crie a função catAndMouse
 const catAndMouse = (mouse, cat1, cat2) => {
-  let verificacao1 = ((Math.abs(cat1 - mouse)) < (Math.abs(cat2 - mouse))) ? 'cat1' : 'cat2';
+  let verificacao1 = ((Math.abs(cat1 - mouse)) < (Math.abs(cat2 - mouse))) ? 'O gato 1 está mais perto do rato' : 'O gato 2 está mais perto do rato.';
   let verificação = ((Math.abs(cat1 - mouse)) === (Math.abs(cat2 - mouse))) ? `os gatos trombam e o rato foge` : verificacao1;
   return verificação;
 };
 // -------------------[DESAFIO 7]------------------------------
-
+const btnSet = document.querySelector('#btnSet');
+btnSet.addEventListener('click', () => {
+  const rato = Number(document.querySelector('#rato').value);
+  const gato1 = Number(document.querySelector('#gt1').value);
+  const gato2 = Number(document.querySelector('#gt2').value);
+  const resulSet = document.querySelector('#resulSet');
+  resulSet.innerText = `Resultado: ${catAndMouse(rato, gato1, gato2)}`
+})
 // ------------------------------------------------------------
 // Desafio 8 - Crie a função fizzBuzz
 const fizzBuzz = (array) => {
@@ -111,8 +150,15 @@ const fizzBuzz = (array) => {
   }
   return newArray;
 };
-// -------------------[DESAFIO 8]------------------------------
 
+// -------------------[DESAFIO 8]------------------------------
+const btnOit = document.querySelector('#btnOit');
+btnOit.addEventListener('click', () => {
+  const textAreaOit = document.querySelector('#textAreaOit').value;
+  const resulOit = document.querySelector('#resulOit');
+  // resulOit.innerHTML = fizzBuzz(textAreaOit);
+  window.alert ('Desculpa, essa interface não está funcionando, você pode usá-la pelo console do navegador, usando a função fizzBuzz e passando como parâmetro um array de números')
+})
 // ------------------------------------------------------------
 // Desafio 9 - Crie a função encode e a função decode
 const encode = (string) => {
@@ -156,7 +202,18 @@ const decode = (string) => {
   return arrayEncode.join('');
 };
 // -------------------[DESAFIO 9]------------------------------
+const btnNon = document.querySelector('#btnNon');
+btnNon.addEventListener('click', () => {
+  const text = document.querySelector('#encAndDec').value;
+  const select = document.querySelector('#opt').value;
+  const resulNon = document.querySelector('#resulNon');
 
+  if (select == 'enc'){
+    resulNon.innerText = encode(text);
+  } else {
+    resulNon.innerText = decode(text);
+  }
+})
 // ------------------------------------------------------------
 // Desafio 10 - Crie a função techList
 const techList = (array, string) => {
