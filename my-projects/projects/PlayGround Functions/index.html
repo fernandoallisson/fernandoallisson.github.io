@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reseta.css">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="/my-projects/projects/PlayGround Functions/style.css">
     <title>Playgrounds Project</title>
 </head>
@@ -27,24 +27,57 @@
             </div>
         </div>
         <div id="segundoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Separa strings </h3>
+            <p class="description">Essa função pegará uma frase/tTexto e irá separar as palavras por vírgula</p>
+            <label for="segDes">Texto / Frase:</label>
+            <textarea name="seg" id="segDes" cols="30" rows="5" style="width: 100%;"></textarea>
+            <input id="btnSeg" type="button" value="Dividir a frase" class="button">
+            <span class="resultSeg"></span>
         </div>
         <div id="terceiroDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Concatenar Strings</h3>
+            <p class="description">Recebe uma string e deve retornar uma string com o formato `'ÚLTIMA PALAVRA, PRIMEIRA PALAVRA`, independente do tamanho do array.</p>
+            <label for="textAreaTer">Frase / Texto</label>
+            <textarea id="textAreaTer" cols="30" rows="5" style="width: 100%;"></textarea>
+            <input class="button" type="button" id="btnTer" value="Concatenar">
+            <span id="resulTer"></span>
+
+            
         </div>
         <div id="quartoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Contar Pontos</h3>
+            <p class="description">Recebe o número de vitórias (wins) e o número de empates (ties) e retorna a quantidade de pontos que o time marcou em um campeonato. Se ganhar vale 3 pts, se empatar ganha 1 pt.</p>
+            <label for="win">Win</label>
+            <input type="number" name="" id="win">
+            <label for="ties">Ties</label>
+            <input type="number" name="" id="ties">
+            <input type="button" id="btnQua" value="contar Pontos" class="button">
+            <span id="resulQua"></span>
+        
         </div>
         <div id="quintoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Contar a quantidade</h3>
+            <p class="description">deverá retornar a quantidade de vezes que o maior número se repete ao receber uma string de números.</p>
+            <p class="description">OS NÚMEROS DEVEM ESTAR SEPARADOS POR VÍRGULA. X, Y, Z. Não coloque os colchetes []</p>
+            <label for="numQuin">Números</label>
+            <textarea name="" id="numQuin" cols="30" rows="5" style="width: 100%;"></textarea>
+            <input type="button" class="button" id="btnQuin" value="Checar">
+            <span id="resulQuin"></span>
         </div>
         <div id="sextoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Calcular Áreas de Polígonos</h3>
+            <p class="description">Essa função calculará a área dos polígonos Triangulo ou quadrado</p>
+            <label for="form">Forma:</label>
+            <select id="forma">
+                <option value="triângulo">triângulo</option>
+                <option value="retângulo">Retângulo</option>
+            </select>
+            <label for="bas">Base</label>
+            <input type="number" name="" id="bas">
+            <label for="alt">Altura</label>
+            <input type="number" name="" id="alt">
+            <input type="button" id="btnSex" value="Calcular" class="button">
+            <span id="resulSex"></span>
         </div>
         <div id="sétimoDesafio" class="contentFunction">
             <h3 class="title">Comparar dois elementos</h3>
