@@ -120,12 +120,19 @@ btnSex.addEventListener('click', () => {
 // ------------------------------------------------------------
 // Desafio 7 - Crie a função catAndMouse
 const catAndMouse = (mouse, cat1, cat2) => {
-  let verificacao1 = ((Math.abs(cat1 - mouse)) < (Math.abs(cat2 - mouse))) ? 'cat1' : 'cat2';
+  let verificacao1 = ((Math.abs(cat1 - mouse)) < (Math.abs(cat2 - mouse))) ? 'O gato 1 está mais perto do rato' : 'O gato 2 está mais perto do rato.';
   let verificação = ((Math.abs(cat1 - mouse)) === (Math.abs(cat2 - mouse))) ? `os gatos trombam e o rato foge` : verificacao1;
   return verificação;
 };
 // -------------------[DESAFIO 7]------------------------------
-
+const btnSet = document.querySelector('#btnSet');
+btnSet.addEventListener('click', () => {
+  const rato = Number(document.querySelector('#rato').value);
+  const gato1 = Number(document.querySelector('#gt1').value);
+  const gato2 = Number(document.querySelector('#gt2').value);
+  const resulSet = document.querySelector('#resulSet');
+  resulSet.innerText = `Resultado: ${catAndMouse(rato, gato1, gato2)}`
+})
 // ------------------------------------------------------------
 // Desafio 8 - Crie a função fizzBuzz
 const fizzBuzz = (array) => {
@@ -143,8 +150,15 @@ const fizzBuzz = (array) => {
   }
   return newArray;
 };
-// -------------------[DESAFIO 8]------------------------------
 
+// -------------------[DESAFIO 8]------------------------------
+const btnOit = document.querySelector('#btnOit');
+btnOit.addEventListener('click', () => {
+  const textAreaOit = document.querySelector('#textAreaOit').value;
+  const resulOit = document.querySelector('#resulOit');
+  // resulOit.innerHTML = fizzBuzz(textAreaOit);
+  window.alert ('Desculpa, essa interface não está funcionando, você pode usá-la pelo console do navegador, usando a função fizzBuzz e passando como parâmetro um array de números')
+})
 // ------------------------------------------------------------
 // Desafio 9 - Crie a função encode e a função decode
 const encode = (string) => {
@@ -188,7 +202,18 @@ const decode = (string) => {
   return arrayEncode.join('');
 };
 // -------------------[DESAFIO 9]------------------------------
+const btnNon = document.querySelector('#btnNon');
+btnNon.addEventListener('click', () => {
+  const text = document.querySelector('#encAndDec').value;
+  const select = document.querySelector('#opt').value;
+  const resulNon = document.querySelector('#resulNon');
 
+  if (select == 'enc'){
+    resulNon.innerText = encode(text);
+  } else {
+    resulNon.innerText = decode(text);
+  }
+})
 // ------------------------------------------------------------
 // Desafio 10 - Crie a função techList
 const techList = (array, string) => {

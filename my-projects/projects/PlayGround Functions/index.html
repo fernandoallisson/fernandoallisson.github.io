@@ -80,32 +80,90 @@
             <span id="resulSex"></span>
         </div>
         <div id="sétimoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Caça ao Rato</h3>
+            <p class="description">Essa função verificará qual gato está mais perto do rato. Considere 1 para 1 unidade de distância</p>
+            <label for="rato">Distância do Rato</label>
+            <input type="number" name="" id="rato" style="width: 80px;">
+            <label for="gt1">Gato 1</label>
+            <input type="number" name="" id="gt1" style="width: 80px;">
+            <label for="gt2">Gato 2</label>
+            <input type="number" name="" id="gt2" style="width: 80px;">
+            <input type="button" value="Checar" class="button" id="btnSet">
+            <span id="resulSet"></span>
         </div>
         <div id="oitavoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">FizzBuzz [EM MANUTENÇÃO]</h3>
+            <p class="description">A função fizzBuzz recebe um array de números e para cada número do array é realizada a divisão por 3 e por 5 e de acordo com o resultado</p>
+            <ul class="description">
+                <li>Retorne a string 'fizz' para cada número do array que seja divisível apenas por 3;</li>
+                <li>Retorne a string 'buzz' para cada número do array que seja divisível apenas por 5;</li>
+                <li>Retorne a string 'fizzBuzz' para cada número do array que seja divisível por 3 e 5;
+                </li>
+                <li>Retorne a string 'bug!' para cada número do array que não seja dividido por 3 nem por 5.</li>
+            </ul>
+            <label for="textAreaOit">Números</label>
+            <!-- <input type="number" name="" id="textAreaOit"> -->
+            <textarea name="" id="textAreaOit" cols="30" rows="5" style="width: 100%;"></textarea>
+            <input type="button" id="btnOit" value="Checar Informações" class="button">
+            <span id="resulOit"></span>
+
         </div>        
         <div id="nonoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Codificador e Decodificador</h3>
+            <p class="description">Essa função codifica e decodifica uma frase, trocando vogais por números ou números por vogais.</p>
+            <label for="enc">String:</label> 
+            <textarea name="" id="encAndDec" cols="30" rows="3" style="width: 100%; margin: 10px;"></textarea>
+            <label for="opt">O que você quer fazer?</label>
+            <select name="" id="opt">
+                <option value="enc">Codificar</option>
+                <option value="dec">Decodificar</option>
+            </select>
+            <input type="button" value="Resultado" class="button" id="btnNon">
+            <span id="resulNon"></span>
+
+
+
         </div>
         <div id="decimoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Lista e objetos</h3>
+            <p class="description">Implemente a função techList que recebe um array e uma string e retorna um array de objetos.</p>
+            <p>Visite o arquivo JS para conferir a função ou use no console do navegador a função techList, adicione o primeiro argumento um array de alguma coisa, e um nome em seguida.</p><br>
+            <p>Tente usar:  <code>techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Fernando');</code> </p>
         </div>
         <div id="decimoPrimeiroDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Criar Número de Telefone [EM MANUTENÇÃO]</h3>
+            <p class="description">Essa função recebe um array com 11 números e retorna um número de telefone, respeitando parênteses, traços e espaços.</p>
+            <label for="numTel">Array de números</label>
+            <textarea name="" id="numTel" cols="30" rows="2" style="width: 100%;"></textarea>
+            <input type="button" value="Gerar Telefone" class="button" id="btn11">
+            <span id="resul11"></span>
         </div>
         <div id="decimoSegundoDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Existência de Triângulo</h3>
+            <p class="description">Essa função verifica se é possível formar um triângulo analisando o comprimento de três linhas.</p>
+            <label for="line1">Linha 1</label>
+            <input type="number" name="" id="line1" style="width: 80px;">
+            <label for="line2">Linha 2</label>
+            <input type="number" name="" id="line2" style="width: 80px;">
+            <label for="line3">Linha 3</label>
+            <input type="number" name="" id="line3" style="width: 80px;">
+            <input type="button" value="Checar" id="btn12" class="button">
+            <span id="resul12"></span>
+
         </div>
         <div id="decimoTerceiroDesafio" class="contentFunction">
-            <h3 class="title">Comparar dois elementos</h3>
-            <p class="description">Essa função pegará duas palavras e retornará se elas são iguais</p>
+            <h3 class="title">Quantos Copos de Água?</h3>
+            <p class="description">Essa função recebe uma string e retorna a sugestão de quantos copos de água você deve beber.</p>
+            <p class="description">// String recebida:
+                '1 cerveja'
+              
+              // String retornada:
+                '1 copo de água'</p>
+            <label for="text13">String: </label>
+            <textarea name="" id="text13" cols="30" rows="5" style="width: 100%;"></textarea>
+            <input type="button" value="Checar" id="btn13" class="button">
+            <span id="resul13"></span>
+
         </div>
     </main>
     <footer>
@@ -113,4 +171,5 @@
     </footer>
 </body>
 <script src="/my-projects/projects/PlayGround Functions/challenges.js"></script>
+<script src="/my-projects/projects/PlayGround Functions/challenges2.js"></script>
 </html>
