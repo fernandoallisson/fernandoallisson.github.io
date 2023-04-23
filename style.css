@@ -1,168 +1,219 @@
-
 /* --------------------------------------Corpo------------------------------------*/
-body{
-    background-color: rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    color: #257c85;
-    font-size: 16px;
-    width: 100%;
-    height: 100%;
-    user-select: none;
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  color: #257c85;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  user-select: none;
 }
 
 /* --------------------------------------Navegação (header)------------------------------------*/
 
-#header{
-    position: fixed;
-    width: 100%;
-    border-bottom: solid 2px #257c85;
-    background-color: rgb(0, 0, 0);
-    top: 0px;
-    display: flex;
-    align-items: center;
-   
+#header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 2px #257c85;
+  background-color: rgb(0, 0, 0);
+  top: 0px;
+  display: flex;
+  flex-direction: row;
 }
 
-#spaceIcon{
-    width: 40%;
-    height: 100%;
+#spaceIcon {
+  width: 50%;
+  height: 100%;
 }
 
-#iconHeader{
-    width: 20%;
-    padding: 5px 0 5px 80px;
+#iconHeader {
+  width: 7em;
+  margin: 5px 0 5px 80px;
+}
+
+.btnResponsive {
+  background-color: transparent;
+  color: #257c85;
+  border: none;
+  font-size: 1.8em;
+  margin: 3px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+
+.btnResponsive:hover {
+  font-size: 2.1em;
+  background-color: #257b8560;
+  border-radius: 5px;
 }
 
 .buttonsContent {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    right: 0;
-    justify-content: right;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  list-style: none;
+  overflow: hidden;
 }
 
-.buttonHome{ /* Botões de navegação */ 
-    text-decoration: none;
-    width: 120px;
-    border: 2px solid #257c85;
-    border-radius: 5px 2px 5px 2px;
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
-    font-size: 12px;
-    color: #257c85;
-
+.buttonHome {
+  /* Botões de navegação */
+  text-decoration: none;
+  width: 120px;
+  border: 2px solid #257c85;
+  border-radius: 5px 2px 5px 2px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  font-size: 12px;
+  color: #257c85;
 }
 
-.buttonHome:hover{
-    font-size: 14px;
-    text-decoration: underline;
-    transition: all 0.5ms;
+.buttonHome:hover {
+  font-size: 14px;
+  text-decoration: underline;
+  transition: all 0.5ms;
 }
 
-.buttonHome:active{
-    font-size: 14px;
-    transition: 1s;
-    text-decoration: underline;
-    background-color: #257c85;
-    color: white;
-    transition: all 1.5ms;
+.buttonHome:active {
+  font-size: 14px;
+  transition: 1s;
+  text-decoration: underline;
+  background-color: #257c85;
+  color: white;
+  transition: all 1.5ms;
 }
 
 /* --------------------------------------Main------------------------------------*/
-#homeConttent{
-    margin-top: 100px;
-    display: flex;
-    padding: 10px;
+#homeConttent {
+  margin-top: 100px;
+  display: flex;
+  padding: 10px;
 }
-
 
 /* --------------------------------------Seção título e botão------------------------------------*/
-#portfFernando{
-    width: 50%;
+#portfFernando {
+  width: 50%;
 }
 
-#nomePort{
-    font-size: 6em;
-    margin: 50px 0 100px 50px;
+#nomePort {
+  font-size: 6em;
+  margin: 50px 0 100px 50px;
 }
 
-#buttonPort{
-    text-align: right;
-    margin-right: 70px;
+#buttonPort {
+  text-align: right;
+  margin-right: 70px;
 }
 
-.buttonPort{
-    width: 300px;
-    border: solid 1px rgb(255, 255, 255);
-    text-decoration: none;
-    border-radius: 2px 8px 2px 8px;
-    padding: 10px;
-    background-color: none;
-    color: #257c85;
-    box-shadow: 2px 2px 4px #257c85;
+.buttonPort {
+  width: 300px;
+  border: solid 1px rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 2px 8px 2px 8px;
+  padding: 10px;
+  background-color: none;
+  color: #257c85;
+  box-shadow: 2px 2px 4px #257c85;
 }
 
-.buttonPort:hover{
-    text-decoration: underline;
-    transition: all 1s;
+.buttonPort:hover {
+  text-decoration: underline;
+  transition: all 1s;
 }
 
-.buttonPort:active{
-    background-color: #257c85;
-    transition: all 1.3ms;
-    color: white;
+.buttonPort:active {
+  background-color: #257c85;
+  transition: all 1.3ms;
+  color: white;
 }
 /* --------------------------------------Seção Foto------------------------------------*/
 
-#photoHome{
-    width: 50%;
+#photoHome {
+  width: 50%;
 }
 
 /* --------------------------------------Rodapé------------------------------------*/
 
 #footer {
-    border-bottom: solid 1px white;
-    background-color:  #257b852c;
-    height: 60px;
-    color: white;
-    text-align: center;
+  border-bottom: solid 1px white;
+  background-color: #257b852c;
+  height: 60px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 10%;
+}
+
+#footer h5 {
+  align-items: center;
+  padding: 20px 0 0 0px;
+  bottom: 0;
+}
+
+.btnResponsive:focus ~ .buttonsContent {
+  height: 140px;
+  background-color: rgb(0, 0, 0);
+  overflow: visible;
+  transition: all 1s;
+}
+
+@media (max-width: 900px) {
+  #header {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: 10%;
-}
-
-#footer h5{
+    height: 60px;
+  }
+  #spaceIcon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  #iconHeader {
+    margin: 10px 0 10px 0;
+  }
+  .buttonsContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
-    padding: 20px 0 0 0px;
-    bottom: 0;
+  }
+  .btnResponsive {
+    display: flex;
+  }
+
+  #homeConttent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #portfFernando {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+  #nomePort {
+    font-size: 3em;
+    margin: 0 0 30px;
+  }
+
+  #photoHome {
+    width: 10em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
