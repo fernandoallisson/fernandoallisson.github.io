@@ -22,8 +22,6 @@ body {
   justify-content: space-between;
 }
 
-
-
 #iconHeader {
   width: 7em;
   margin: 5px 0 5px 80px;
@@ -95,17 +93,15 @@ body {
 
 /* --------------------------------------Seção título e botão------------------------------------*/
 #portfFernando {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 #nomePort {
   font-size: 6em;
   margin: 50px 0 100px 50px;
-}
-
-#buttonPort {
-  text-align: right;
-  margin-right: 70px;
 }
 
 .buttonPort {
@@ -132,7 +128,7 @@ body {
 /* --------------------------------------Seção Foto------------------------------------*/
 
 #photoHome {
-  width: 50%;
+  width: 60%;
 }
 
 /* --------------------------------------Rodapé------------------------------------*/
