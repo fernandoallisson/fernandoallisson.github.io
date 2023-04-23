@@ -18,12 +18,9 @@ body {
   top: 0px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-#spaceIcon {
-  width: 50%;
-  height: 100%;
-}
 
 #iconHeader {
   width: 7em;
@@ -49,7 +46,6 @@ body {
 }
 
 .buttonsContent {
-  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: row;

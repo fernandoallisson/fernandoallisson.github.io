@@ -19,11 +19,7 @@ body {
   top: 0px;
   display: flex;
   flex-direction: row;
-}
-
-#spaceIcon {
-  width: 50%;
-  height: 100%;
+  justify-content: space-between;
 }
 
 #iconHeader {
@@ -50,7 +46,6 @@ body {
 }
 
 .buttonsContent {
-  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -98,17 +93,15 @@ body {
 
 /* --------------------------------------Seção título e botão------------------------------------*/
 #portfFernando {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 #nomePort {
   font-size: 6em;
   margin: 50px 0 100px 50px;
-}
-
-#buttonPort {
-  text-align: right;
-  margin-right: 70px;
 }
 
 .buttonPort {
@@ -135,7 +128,7 @@ body {
 /* --------------------------------------Seção Foto------------------------------------*/
 
 #photoHome {
-  width: 50%;
+  width: 60%;
 }
 
 /* --------------------------------------Rodapé------------------------------------*/
@@ -203,7 +196,7 @@ body {
   #portfFernando {
     width: 100%;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
   }
   #nomePort {
     font-size: 3em;
@@ -214,6 +207,13 @@ body {
     width: 10em;
     text-align: center;
     display: flex;
+    justify-content: flex-start;
+  }
+  .buttonPort {
+    display: flex;
+    width: 100%;
     justify-content: center;
+    margin: 10px;
+    align-items: center;
   }
 }
